@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+                            <label for="name" class="col-md-4 control-label">Account Name</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -59,6 +59,30 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+
+
+                        
+                        <div class="form-group">  
+                            <div class="col-md-offset-2 col-md-12">
+                                <h3>What are you looking for?</h3>
+                                <br>
+                            </div>
+                                        
+                            <div class="col-md-offset-2 col-md-1 ">
+                                <input id="full2" type="radio" class="radio radio-inline" name="role" value="hiree" required>
+                            </div>
+                            <label for="full2" class="col-md-2">I'm looking for online work</label>
+
+                            <div class="col-md-offset-1 col-md-1 ">
+                                <input id="full2" type="radio" class="radio radio-inline" name="role" value="hirer" required>
+                            </div>
+                            <label for="full2" class="col-md-2">I want to hire a freelancer</label>
+                        </div>
+
+                        <div class="form-group">                        
+                            
+                        </div>
+
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

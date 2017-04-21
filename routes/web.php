@@ -11,10 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
+// Route::get('/home', 'HomeController@index');
 
-Route::get('/home', 'HomeController@index');
+
+Route::get('/welcome', function () {
+    return view('pages/welcome');
+});
+
+
+
+Route::get('/profile', 'PagesController@displayProfile');
+Route::post('/profile', 'PagesController@editJobDescription');
+Route::get('contact', 'PagesController@getContact');
+Route::get('about', 'PagesController@getAbout');
+Route::get('/', 'HomeController@index');		
+Route::get('profileform', 'PagesController@getProfileform');
+Route::post('profileform', 'PagesController@postProfileform');
+
+Route::post('avatar','PagesController@editAvatar');	
+
+
+
+
+
+
+
