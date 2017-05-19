@@ -25,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         Session::flash('message', 'Login successful!');
-        return redirect('profile');
+        return redirect('welcome');
     }
 }

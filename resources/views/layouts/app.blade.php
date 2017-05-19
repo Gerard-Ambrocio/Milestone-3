@@ -8,10 +8,17 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Oopswork!</title>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    
+
+   
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -36,15 +43,15 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/welcome') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        Oopswork
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/profile">Profile</a></li>
-                        <li><a href="/about">About</a></li>
+                        
+                        <li><a href="/market">Market</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
 
@@ -61,6 +68,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li class="active">
+                                        <a href="/profile">Profile</a>
+                                    </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -82,6 +92,48 @@
 
         @yield('content')
     </div>
+
+    <footer>
+  
+<div id="footer">
+<div class="container">
+  <div class="row">
+    
+    
+  <div class="row">
+    <center><img src="http://200.27.156.170/ean_default/img/cocha/footer-bg.png" class="img-responsive building"></center>
+    <div id="bottom-footer">
+      <div class="row">
+        <div class="col-md-8">
+     
+        </div>
+        <div class="col-md-4 phone">
+      
+        
+          </div>
+    </div>
+  </div><!--/row 2-->
+      <div class="row" id="final-footer">
+        <div class="col-sm-4">
+        
+        </div>
+        <div class="col-sm-4 text-center">
+          Copyright © 2017 Oops. All Rights Reserved
+      Oops Compound, Scout Torillo St. Quezon City, Manila - Philippines
+        </div>
+        <div class="col-sm-4 text-right">
+         
+        </div>
+      </div>
+  </div><!--/container-->
+</div><!--/footer--></div>
+
+  
+</footer>
+
+
+
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

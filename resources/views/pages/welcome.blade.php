@@ -2,59 +2,84 @@
 
 @section('content')
 
-    <div class="container">
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="jumbotron">
-            <h1>Welcome to My Blog!</h1>
-            <p class="lead">Thank you so much for visiting. This is my test website built with Laravel. Please read my popular post!</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Popular Post</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- end of header .row -->
 
-      <div class="row">
-        <div class="col-md-8">
-          <div class="post">
-            <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis amet tenetur eum, consequuntur assumenda officiis quidem omnis placeat. Sequi ex fugiat reiciendis at eligendi inventore ad, odio magnam velit doloribus...</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
 
-          <hr>
+<!-- -------- -->
 
-          <div class="post">
-            <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis amet tenetur eum, consequuntur assumenda officiis quidem omnis placeat. Sequi ex fugiat reiciendis at eligendi inventore ad, odio magnam velit doloribus...</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
+  <div class="jumbotron text-center">
+ 
+     <h1>Oopswork!</h1>
+    <h3 class="lead">We are here to help find you help!</h3>
+    <img src="{{asset('img/lazy.png')}}" id="work" class="img-responsive"> 
+    <img src="{{asset('img/work.png')}}" id="lazy" class="img-responsive">
 
-          <hr>
+  </div>
 
-          <div class="post">
-            <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis amet tenetur eum, consequuntur assumenda officiis quidem omnis placeat. Sequi ex fugiat reiciendis at eligendi inventore ad, odio magnam velit doloribus...</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
+<!-- -------- -->
 
-          <hr>
 
-          <div class="post">
-            <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis amet tenetur eum, consequuntur assumenda officiis quidem omnis placeat. Sequi ex fugiat reiciendis at eligendi inventore ad, odio magnam velit doloribus...</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-          </div>
-
-          <hr>
-        </div>
-
-        <div class="col-md-3 col-md-offset-1">
-          <h2>Sidebar</h2>
-        </div>
-      </div>
-
+<div class="container text-center well">
+  <h2>How it works</h2>
+  
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-search"></span>
+      <h4>FIND</h4>
+      <p>Post a job to tell us about your project. We'll quickly match you with the right people.</p>
     </div>
-    
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-check"></span>
+      <h4>HIRE</h4>
+      <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project.</p>
+    </div>
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>WORK</h4>
+      <p>Use the Oopswork platform to chat, share files, and collaborate from your desktop or on the go.</p>
+    </div>
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-usd"></span>
+      <h4>PAY</h4>
+      <p>Invoicing and payments happen through Oopswork. With Oopswork Protection, only pay for work you authorize.</p>
+    </div>
+ </div>
+ <div>
+  </div> 
+    </div>
+
+
+<!-- ------ -->
+
+<!-- ------ -->
+<div class="container text-center well">
+  <h2>About Us</h2>
+  
+   
+      
+      <div class="row">
+      <div class="col-md-6">
+        <img src="{{asset('img/explain.jpg')}}" class="img-responsive img-circle">
+      </div>
+        <div class="col-md-6  text-center">
+          
+          <h4 class="h4text">Technology is making online work similar to local work, with added speed, cost, and quality advantages.
+
+To begin with, online work can happen wherever there’s a reliable Internet connection — an office, home, café, or rooftop. This also means you can choose who you work with, among a larger pool of people from around Philippines. 
+
+We help you find the right people for the need you want!
+
+</h4>
+        </div>
+      </div>
+
+  
+</div>
+<!-- ------------ -->
+
+<!-- ------------------------- -->
+
+
+
 @endsection

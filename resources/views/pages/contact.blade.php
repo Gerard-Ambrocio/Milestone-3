@@ -4,8 +4,8 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-12">
-          <h1>Contact Me</h1>
+        <div class="col-md-5 ">
+          <h1>Contact us </h1>
           <hr>
           <form>
             <div class="form-group">
@@ -26,6 +26,18 @@
             <input type="submit" value="Send Message" class="btn btn-success">
           </form>
         </div>
+
+
+        <div class="col-md-5 col-md-offset-2">  
+        <br>
+      
+
+      <h3> Our Contact Details</h3>
+       <br> 
+      <h4><span class="glyphicon glyphicon-map-marker"></span> Manila,Philippines</h4>
+      <h4><span class="glyphicon glyphicon-phone"></span> +02 911111</h4>
+      <h4><span class="glyphicon glyphicon-envelope"></span> oopswork@oops.com</h4> 
+    </div>
       </div>
 
     </div>

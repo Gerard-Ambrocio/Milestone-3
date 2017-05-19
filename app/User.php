@@ -11,6 +11,22 @@ class User extends Authenticatable
         return $this->hasOne('App\Profile');
     }
 
+    public function applications(){
+        return $this->belongsToMany('App\Job','hirees','user_id','job_id');
+    }
+
+    public function create_application($id){
+        return $this->applications()->attach([$id => ['hire_status'=>0]]);
+    }
+
+    public function hired(){
+        return $this->applications()->wherePivot('hire_status',1);
+    }
+
+    // public function hire_applicant(){
+    //     return $this->
+    // }
+
     use Notifiable;
 
     /**

@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Profile</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="" enctype="mutipart/form-data">
+                    <form class="form-horizontal" role="form" method="POST" action="profileform" >
                         
 
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -40,8 +40,12 @@
                         <div class="form-group">
                             <label for="location" class="col-md-4 control-label">Location</label>
 
-                            <div class="col-md-6">
-                                <input id="location" type="text" class="form-control" name="location" required>
+                            <div class="col-md-6">                                
+                                <select  id="location" type="text" class="form-control" name="location" required>
+                                 @foreach($cities as $city)
+                                  <option value="{{$city->city}}">{{$city->city}}</option>
+                                 @endforeach   
+                                </select>
                             </div>
                         </div>
 
