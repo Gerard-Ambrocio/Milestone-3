@@ -161,23 +161,21 @@ class PagesController extends Controller {
 
 
     	public function deleteUser($id){
-
-    	// $usertbd = User::find($id);
-    	// $usertbd->profile->delete();
-    	// $usertbd->delete();
-    	
-   	Job::destroy($id);
-		
-		
-
-		return redirect('profile');
-
-    }	
+    		$usertbd = User::find($id);
+    		// dd($usertbd);
+    		foreach ($usertbd->profile->jobs as $job) {
+    			$job->delete();
+    		}
+    		$usertbd->profile->delete();
+	    	$usertbd->delete();
+		    	
+			return redirect('profile');
+	    }	
 
     	
     	public function displayMarket(){
     	$jobs = Job::all();
-    	return view('pages.market', compact('profile','jobs'));	
+    	return view('pages.market', compact('jobs'));	
     	}
 
  

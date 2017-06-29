@@ -25,7 +25,6 @@
                             
 
                              @foreach($profiles as $profile)
-                             
 
                              <tr class="text-left">
                                 <td>{{$profile->first_name}}</td>
@@ -38,7 +37,7 @@
                              @if ($profile->role == 'admin')
                              	<td><button class='btn btn-danger btn-sm disabled' type='button' style='user-select:none'>-------</button></td>
                              @else 
-                             	<td><a href='delete-user/{$id}'><button class='btn btn-danger btn-sm' type='button' >Delete</button></a></td>
+                             	<td><a href='delete-user/{{$profile->user_id}}'><button class='btn btn-danger btn-sm' type='button' >Delete</button></a></td>
                              @endif
                                 
                                 

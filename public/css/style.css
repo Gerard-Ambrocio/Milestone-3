@@ -13,18 +13,21 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 	background: url(http://mybasicwebsite.wikispaces.com/file/view/Moving%20Background.gif/500342424/Moving%20Background.gif)   no-repeat center/contain ;
 	height: 80vh;
 	padding-top: 0;
-
-}
-#work {
-	height: 150px;
-	margin-left: 30%;
-	margin-top: -150px; 
 }
 
-#lazy{
- 	height: 150px;
+#lazy {
+	max-height: 150px;
+	width: auto;
+	margin-left: 30%;	
 
- 	margin-left:60%;
+}
+
+
+#work{
+ 	max-height: 150px;
+ 	margin-top: -150px;
+ 	margin-left: 60%;
+ 	width: auto;
 }
 
 .glyphicon {

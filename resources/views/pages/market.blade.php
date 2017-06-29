@@ -15,11 +15,11 @@
 
 				        
 
-                        @foreach($jobs as $job)
+            @foreach($jobs as $job)
 
             <div class="panel panel-default">
                 <div class="panel-body">
-                         <div class="row">                    
+                     <div class="row">                    
                             
                               <div class="col-sm-11 col-sm-offset-1 text-left">
                                 <h3> {{$job->job_name}} </h3>
@@ -36,7 +36,7 @@
 
                               <div class="col-sm-2">
                                 <span>  {{$job->date_posted}} </span>                             
-                              </div> 
+                              </div>  
                               
                               @if(null!==Auth::user() && Auth::user()->role == 'hiree')
                                 <div class='col-sm-4'>
@@ -64,10 +64,10 @@
                               
 
                           
-                         </div>   
-    </div> <!-- panel body -->
+                         </div>       
+                </div> <!-- panel body -->
             </div><!--  panel  -->
-                         @endforeach
+            @endforeach
 
                     
 		

@@ -11,8 +11,8 @@
  
      <h1>Oopswork!</h1>
     <h3 class="lead">We are here to help find you help!</h3>
-    <img src="{{asset('img/lazy.png')}}" id="work" class="img-responsive"> 
-    <img src="{{asset('img/work.png')}}" id="lazy" class="img-responsive">
+    <img src="{{asset('img/lazy.png')}}" id="lazy" class="img-responsive"> 
+    <img src="{{asset('img/work.png')}}" id="work" class="img-responsive">
 
   </div>
 
